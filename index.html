@@ -38,6 +38,8 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+
+
     <!-- =======================================================
   * Template Name: Coders Mentor- v2.2.1
   * Template URL: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/
@@ -185,9 +187,9 @@
                 <div class="icon"><i class="bx bx-slideshow"></i></div>
                 <h4><a href="">One On One</a></h4>
                 <p>
-                  Live coding Sessions, following a customized plan to
-                  achieve your goals within your time frame and the exact
-                  technologies you are targeting
+                  Live coding Sessions, following a customized plan to achieve
+                  your goals within your time frame and the exact technologies
+                  you are targeting
                 </p>
               </div>
             </div>
@@ -921,11 +923,18 @@
 
             <div class="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
-                method="post"
                 role="form"
+                action="https://api.staticforms.xyz/submit"
+                method="post"        
                 class="php-email-form"
               >
+                <input
+                  type="hidden"
+                  name="accessKey"
+                  value="278c6f42-cb13-4308-a0c8-7689ca6585c5"
+                />
+                <!-- Required -->
+
                 <div class="form-row">
                   <div class="col-md-6 form-group">
                     <input
@@ -973,6 +982,9 @@
                     data-msg="Please write something for us"
                     placeholder="Message"
                   ></textarea>
+                  <!-- spam protection -->
+                  <input type="text" name="honeypot" style="display: none" />
+                  
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
